@@ -9,7 +9,7 @@ let menu = {
 };
 
 function menuMicroondas (segundos, prato) {
-    if (prato !== menu.feijao && menu.pipoca) {
+    if (prato !== menu.pipoca && prato !== menu.macarrao && prato !== menu.carne && prato !== menu.feijao && prato !== menu.brigadeiro) {
         return "Prato inexistente!";
     } else if (segundos > 3*prato) {
         return "Kabumm! ";
@@ -18,7 +18,7 @@ function menuMicroondas (segundos, prato) {
     } else if (segundos < prato) {
         return "Tempo insuficiente!";
     } else if (segundos == prato) {
-        return "Prato ponto, bom apetite!!! (tempo exato)"
+        return "Prato ponto, bom apetite!!! (tempo exato)";
     } else {
         return "Prato pronto, bom apetite!!! (passou do tempo):D";
     }
@@ -27,8 +27,10 @@ function menuMicroondas (segundos, prato) {
 //prencher campo 1: segundos 
 //prencher campo 2: menu.nomePrato ex: menu.feijao
 //pratos disponiveis (pipoca, macarrao, carne, feijao e brigadeiro)
-console.log(menuMicroondas(12,menu.feijao));
+let segundos = 50;
+let prato = menu.brigadeiro;
 
+console.log(menuMicroondas(segundos,prato));
 
 //Funções de cada enunciado :)
 
