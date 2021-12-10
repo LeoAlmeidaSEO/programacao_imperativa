@@ -20,21 +20,18 @@ const Aluno = {
         this.faltas ++;
     },
 
-    calcularMedia: function() {
-        this.listaAluno.forEach(aluno => {
-            let total = 0;
+    calcularMedia: function(aluno) {
+        let total = 0;
 
-            aluno.notas.forEach(nota => {
+        aluno.notas.forEach(nota => {
             total += nota;
         });
 
         // Estava tentando exibir essa média na função do curso.
         // ** Habilitar essa função abaixo, para testar a função curso
-        // return (total/aluno.notas.length);
+        return (total/aluno.notas.length);
         
-        console.log(`A média do ${aluno.nome} é ${total/aluno.notas.length}`); 
-
-    })
+        // console.log(`A média do ${aluno.nome} é ${total/aluno.notas.length}`); 
     },
     exportarLista: function() {
         return this.listaAluno;
