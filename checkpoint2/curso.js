@@ -50,7 +50,7 @@ console.log("---------- Subir aluno dentro de Curso ---------");
 Curso.adicionarAlunoCurso('Mag', 4, [8, 9, 10, 7]);
 console.log(Curso.listaDeEstudantes);
 
-// notaDeAprovacao: 7 && faltasMaximas: 5
+// notaDeAprovacao: 6 && faltasMaximas: 5
 // --> Calcular aprovação do Aluno <--
 console.log("----------------------------------------");
 console.log("---------- Regra de Aprovação  ---------");
